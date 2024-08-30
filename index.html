@@ -17,7 +17,8 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
+            margin: 0 auto;
+            max-width: 1200px; /* Limits the width of the container */
         }
         .header {
             text-align: center;
@@ -41,147 +42,199 @@
         }
         .about {
             display: flex;
+            flex-direction: column;
             align-items: center;
             margin-top: 20px;
         }
         .about img {
             border-radius: 50%;
-            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 150px; /* Default width for smaller screens */
+            height: 150px; /* Ensure the image is a square */
+            object-fit: cover;
         }
         .about .description {
             font-size: 16px;
             line-height: 1.5;
+            text-align: center;
         }
-        .education, .experience, .skills, .certificates {
+        .education, .coursework, .projects, .technical-skills, .extracurricular, .certifications {
             margin-top: 20px;
         }
-        .education h1, .experience h2, .skills h5, .certificates h2 {
+        .education h1, .coursework h2, .projects h2, .technical-skills h2, .extracurricular h2, .certifications h2 {
             font-size: 24px;
             margin-bottom: 10px;
             color: #E50914; /* Netflix red color */
         }
-        .education ul, .experience ul, .skills ul, .certificates ul {
+        .education ul, .coursework ul, .projects ul, .technical-skills ul, .extracurricular ul, .certifications ul {
             list-style-type: disc;
             padding-left: 20px;
+        }
+        .projects ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .projects li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #CCCCCC;
+        }
+        /* Responsive styles */
+        @media (min-width: 768px) {
+            .about {
+                flex-direction: row;
+            }
+            .about img {
+                width: 200px;
+                height: 200px;
+            }
+            .about .description {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header h1 {
+                font-size: 28px;
+            }
+            .header p {
+                font-size: 16px;
+            }
+            .education h1, .coursework h2, .projects h2, .technical-skills h2, .extracurricular h2, .certifications h2 {
+                font-size: 20px;
+            }
+            .about img {
+                width: 120px;
+                height: 120px;
+            }
+            .about .description {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
-
 <div class="container">
     <div class="header">
-        <h1><b>Subhash</b></h1> 
-        <p><b>Contact:</b> <a href="https://www.gmail.com" target="_blank">Subhash7042848121@gmail.com</a></p>
+        <h1><b>Subhash</b></h1>
+        <p><b>Location:</b> New Delhi, India</p>
+        <p><b>Contact:</b> <a href="tel:+917042848121">+91-7042848121</a></p>
+        <p><b>Email:</b> <a href="mailto:Subhash7042848121@gmail.com">Subhash7042848121@gmail.com</a></p>
         <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/subhash-782513257" target="_blank">linkedin.com/in/subhash-782513257</a></p>
         <p><b>GitHub:</b> <a href="https://www.github.com/Subhashdrx2002" target="_blank">github.com/Subhashdrx2002</a></p>
+        <p><b>Hackerrank:</b> <a href="https://www.hackerrank.com" target="_blank">hackerrank.com</a></p>
+        <p><b>Codeforces:</b> <a href="https://codeforces.com" target="_blank">codeforces.com</a></p>
     </div>
 
     <div class="about">
-        <img src="image/Subhash.jpg" alt="Subhash pic" width="200">
+        <img src="image/Subhash.jpg" alt="Subhash pic">
         <div class="description">
-            <big>
-                I am 2nd year student at <b>Netaji Subhas University of Technology</b>, pursuing a B.Tech in <b>Instrumentation and Control Engineering</b>. I am passionate about learning new technologies and applying them to solve real-world problems.
-                I have a strong foundation in <b>Python</b>, <b>C</b>, and <b>Java</b>.
-                In my spare time, I enjoy working on coding projects, contributing to open source projects, and attending meetups and conferences. I am also an active member of the programming community on social media.
-                <br>
-                <b>Skills:</b>
-                <ul>
-                    <li>Programming Languages: Python, C#, Java</li>
-                    <li>Data Structures & Algorithms</li>
-                    <li>HTML</li>
-                </ul>
-                <b>Goals:</b>
-                <ul>
-                    <li>To become a software engineer and work on cutting-edge technologies.</li>
-                    <li>To contribute to open source projects and help others learn.</li>
-                    <li>To make a positive impact on the world through technology.</li>
-                </ul>
-            </big>
+            <p>I am a 2nd-year student at <b>Netaji Subhas University of Technology</b>, pursuing a B.Tech in <b>Instrumentation and Control Engineering</b>. I am passionate about learning new technologies and applying them to solve real-world problems.</p>
+            <p>I have a strong foundation in <b>Python</b>, <b>C</b>, and <b>Java</b>. In my spare time, I enjoy working on coding projects, contributing to open source projects, and attending meetups and conferences. I am also an active member of the programming community on social media.</p>
+            <p><b>Skills:</b></p>
+            <ul>
+                <li>Programming Languages: Python, C#, Java</li>
+                <li>Data Structures & Algorithms</li>
+                <li>HTML</li>
+            </ul>
+            <p><b>Goals:</b></p>
+            <ul>
+                <li>To become a software engineer and work on cutting-edge technologies.</li>
+                <li>To contribute to open source projects and help others learn.</li>
+                <li>To make a positive impact on the world through technology.</li>
+            </ul>
         </div>
     </div>
 
     <div class="education">
         <h1>Education</h1>
         <ul>
-            <li>Bachelor of Technology in Instrumentation and Control Engineering (ICE), Netaji Subhas University of Technology (NSUT)</li>
-            <li>Govt Boys Sr Sec School Prashant Vihar</li>
+            <li><b>Netaji Subhas University of Technology (NSUT)</b> (2022 – 2026)<br>
+                Instrumentation and Control Engineering (ICE), New Delhi, India</li>
+            <li><b>Govt Boys Sr Sec School</b> (2020 – 2021)<br>
+                Science - 12th class - Percentage: 80%, New Delhi, India</li>
         </ul>
     </div>
 
-    <div class="experience">
-        <h2>Work Experience</h2>
-
-        <h3>Digital Marketing Intern</h3>
-        <p>Jun 23 - Jun 23</p>
+    <div class="coursework">
+        <h2>Coursework / Skills</h2>
         <ul>
-            <li>Motivating students to go for online Internshala Trainings and help them to upskill themselves.</li>
-            <li>Promoting Internshala campaigns in your college and helping students to find their dream internships & jobs.</li>
-            <li>Participating in social media branding campaigns and learn how to communicate for a brand online.</li>
-        </ul>
-
-        <h4><big>Project Intern</big></h4>
-        <p>July 23 - July 23</p>
-        <ul>
-            <li>Identify trends and patterns.</li>
-            <li>Make better decisions.</li>
-            <li>Improve communication.</li>
-            <li>Increase customer engagement.</li>
-        </ul>
-    </div>
-
-    <div class="skills">
-        <h5><big>Skills</big></h5>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>C</li>
             <li>Data Structures & Algorithms</li>
-            <li>HTML</li>
+            <li>Operating Systems</li>
+            <li>Database Management System (DBMS)</li>
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>Web Development</li>
         </ul>
     </div>
-    
 
-
-    <iframe
-src="https://www.chatbase.co/chatbot-iframe/N9TXyA5llYPFImFZ78Wvq"
-width="100%"
-style="height: 100%; min-height: 700px"
-frameborder="0"
-
-
-    <div class="certificates">
-        <h2>Certifications and Licenses</h2>
+    <div class="projects">
+        <h2>Projects</h2>
         <ul>
-            <li><a href="https://www.knowledgegate.in/learn/certificate/8901319-168010" target="_blank">Certificate Html in Web Development -knowledgegate Learning Platform</a></li>
-            <li><a href="https://www.guvi.in/verify-certificate?id=i3Svl87C05pX581861" target="_blank">License in Python Programming - GIVI learning platform</a></li>
-            <li><a href="https://www.theforage.com/achievements?ref=8w8C2icx8TvCbctBJ" target="_blank">Data Visualisation</a></li>
-            <!-- Add more certificates and licenses as needed -->
+            <li>
+                <b>Zerodha Full-Stack Trading Platform</b> | React, Node.js, Express, MongoDB (March 2025)<br>
+                • Built a full-stack trading app with Zerodha’s Kite API for real-time data and trading.<br>
+                • Created a responsive front-end using React for seamless trading and analysis.<br>
+                • Developed a scalable back-end with Node.js and Express for API handling and user management.<br>
+                • Used MongoDB for storing and retrieving user data and trading history.<br>
+                • Implemented real-time updates via WebSockets for market and order notifications.<br>
+                • Improved security and performance with testing, code reviews, and strategic deployment.
+            </li>
+            <li>
+                <b>Arbnb Travel and Listing Platform</b> | React, Node.js, Express, MongoDB (April 2025)<br>
+                • Developed a full-stack travel and listing application for booking accommodations and travel experiences.<br>
+                • Built a dynamic front-end with React to allow users to search, filter, and book listings with a user-friendly interface.<br>
+                • Implemented a robust back-end using Node.js and Express to manage user accounts, booking transactions, and listing details.<br>
+                • Utilized MongoDB to handle user data, booking records, and listing information with efficient querying and storage.<br>
+                • Enabled real-time features such as booking confirmations and notifications using WebSockets.<br>
+                • Enhanced application performance and security through thorough testing, code reviews, and optimized deployment strategies.
+            </li>
         </ul>
     </div>
-     <div class="hobbies">
-        <h2 style="color: red;">Hobbies and Interests</h2>
+
+    <div class="technical-skills">
+        <h2>Technical Skills</h2>
         <ul>
-            <li><i class="fas fa-Travelling"></i> Travelling</li>
-            <li><i class="fas fa-Coding"></i>Coding</li>
-            
+            <li><b>Languages:</b> Java, JavaScript, HTML, CSS, SQL, NoSQL</li>
+            <li><b>Developer Tools:</b> VS Code, Android Studio, IntelliJ IDEA Ultimate</li>
+            <li><b>Technologies/Frameworks:</b> GitHub, ReactJS, NextJS, NodeJS, ExpressJS, Git</li>
         </ul>
     </div>
-    <div class="Languages">
-        <h2 style="color: red;">Language</h2>
+
+    <div class="extracurricular">
+        <h2>Extracurricular Activities</h2>
         <ul>
-            <li><i class="English"></i> English</li>
-            <li><i class="Hindi"></i>Hindi</li>
-            
+            <li>
+                <b>EY Techathon 4.0</b> (November 2023)<br>
+                • Successfully advanced through Round 1, demonstrating strong problem-solving skills and innovative thinking.<br>
+                • <a href="https://www.example.com" target="_blank">Participation Certificate</a>
+            </li>
+            <li>
+                <b>SUSTAIN-A-THON 2024</b> (August 2024)<br>
+                • Participated in the Sustainability Hackathon organized by Indian Oil Corporation Limited.<br>
+                • Showcased commitment to sustainability and innovative problem-solving.<br>
+                • <a href="https://www.example.com" target="_blank">Participation Certificate</a>
+            </li>
         </ul>
     </div>
- <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+
+    <div class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li><b>Java & DSA</b> - Apna College</li>
+            <li><b>Full Stack Development</b> - XIE (MERN Stack)</li>
+            <li><b>3 Stars in Java & DSA</b></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Subhash. All rights reserved.</p>
     </footer>
 </div>
 
 </body>
 </html>
-
-
-
