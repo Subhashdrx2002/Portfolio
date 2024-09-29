@@ -1,0 +1,12 @@
+[
+    {
+      "name": "NotyStack Android",
+      "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
+      "image": "notystackandroid",
+      "category": "web development",
+      "links": {
+        "view": "https://subhashdrx2002.github.io/Myntra-clone/",
+        "code": "https://github.com/Subhashdrx2002/Myntra-clone.git"
+      }
+    }
+  
