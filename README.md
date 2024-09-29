@@ -1,7 +1,7 @@
 ## Portfolio-Website
 Portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 
-<a href="WEBSITE LINK" target="_blank">**Visit Now** 🚀</a>
+<a href="[WEBSITE LINK](https://subhashkumar-portfolio.netlify.app/)" target="_blank">**Visit Now** 🚀</a>
 
 
 ## 📌 Tech Stack
@@ -14,6 +14,8 @@ Portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome and JSON
 
 ## 📌 Sneak Peek of Main Page 🙈 :
+portfolio photo ![Portfolio-Jigar-Sable](https://github.com/user-attachments/assets/c016010f-dafc-404a-adff-730086368644)
+
 
 
 
@@ -21,5 +23,5 @@ Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome and JSON
 
 Feel free to reach me through the below handles if you'd like to contact me.
 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)]
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subhash-kumar-782513257/)
+[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/subhash_3319/?next=%2Flivein.now%2Ftagged%2F)
